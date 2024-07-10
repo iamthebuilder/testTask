@@ -13,10 +13,8 @@ public class Main {
             parts = checkForCorrectInputAndParseIntoParts(input);
             return String.valueOf(doArithmeticExpression(parts));
         } catch (MyExceptionForInputString exception) {
-            System.out.println(exception.getMessage());
-            System.exit(0);
+            return exception.getMessage();
         }
-        return null;
     }
 
     public static String enteringTheString() {
